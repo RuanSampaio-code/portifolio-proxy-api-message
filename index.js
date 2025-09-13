@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:8080' }));
+app.use(cors({ origin: 'https://jruandev-portifolio.vercel.app/' }));
 
 // Endpoint para receber dados do frontend e encaminhar para API Java
 app.post('/api/proxy', async (req, res) => {
